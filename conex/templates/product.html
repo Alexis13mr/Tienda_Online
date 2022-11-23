@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="separador"></div>
+    
+<div class="cont">        
+    <div class="titulo">
+        <h1>{{prod.nomb}}</h1>                   
+        <section>{{prod.descrip}}</section> 
+        <section>{{prod.id}}</section> 
+        <section>{{prod.valor}}</section>
+        <section>Cantidad disponible: {{prod.cant}}</section> 
+      
+        <br><br><br><br><br> <a href="/compra/{{prod.id}}">Comprar</a>                  
+    </div>
+    <aside class="img2">
+        <img src="{{prod.imagen.url}}" alt="Imagen de producto">
+    </aside>
+</div>
+
+<div class="separador"></div>
+
+{% endblock %}

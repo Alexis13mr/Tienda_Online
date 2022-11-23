@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    
+    <link href="{% static '/css/est.css' %}" rel="stylesheet"/>
+</head>
+<body>
+    
+    <img id="log" src="{% static 'img/Logo.png' %}" alt="Logo" >
+    <div id="barra">
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>                
+    </div>
+    
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="separador"></div>   
+    <footer>
+        <a class="nav-footer-sic-logo" href="https://www.sic.gov.co/" target="_blank" rel="nofollow noreferrer">
+            <img width="141" height="30" decoding="async" 
+            src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.3/mercadolibre/sic.png" 
+            alt="SIC - Industria y comercio" 
+            srcset="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.3/mercadolibre/sic@2x.png 2x">
+        </a>
+    </footer>
+
+
+</body>
+</html>
